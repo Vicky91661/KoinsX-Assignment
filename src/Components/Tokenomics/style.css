@@ -1,0 +1,19 @@
+.outerRing {
+    border:none;
+    outline: none;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #0680FE 0deg 288deg, 
+        #F6A200 288deg 360deg 
+    );
+  }
+  .innerRing{
+    border:none;
+    outline: none;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+  }

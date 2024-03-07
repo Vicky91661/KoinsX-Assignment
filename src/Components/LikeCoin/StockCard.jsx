@@ -2,7 +2,7 @@ import React from 'react'
 import { IoTriangle } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
-function StockCard({symbol,photo,price,percentage}) {
+function StockCard({symbol,photo,price,percentage,map}) {
   return (
     <div className=' rounded-md shadow p-2 border-solid border-[1px] border-gray-200 relative'>
         <div className='flex gap-2 justify-center items-center'>
@@ -17,7 +17,7 @@ function StockCard({symbol,photo,price,percentage}) {
         <div className=' flex flex-col'>
             <div className=' text-sm font-semibold ml-2 mt-1'>${price}</div>
             <div>
-                <img src={"https://www.coingecko.com/coins/11636/sparkline.svg"} alt="" />
+                <img src={map} alt="" />
             </div>
                 
         </div>

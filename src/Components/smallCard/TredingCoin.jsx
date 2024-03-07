@@ -14,14 +14,14 @@ function TredingCoin() {
         
 
         {coins.slice(0,3).map((items,index)=>{
-            return (<div className=' flex justify-between font-semibold gap-2'>
+            return (<div className=' flex justify-between font-semibold gap-2' key={index}>
             <div className=' flex justify-center items-center gap-1'>
                 <div className='flex w-[20px] h-[20px] items-center justify-center'><img className='rounded-full' src={items.item.thumb} alt="" /></div>
                 <div>{items.item.name}({items.item.symbol})</div>
             </div>
             <div className=' text-sm text-[#18AB79] bg-[#EAF7F3] px-3 py-[6px] rounded-md'>
             <IoTriangle className=' inline-block mr-2' color='#18AB79'/>
-            {items.item.data.price_change_percentage_24h.btc.toFixed(2)}
+            {items.item.data.price_change_percentage_24h.btc.toFixed(2)}%
             
             </div>
         </div>);

@@ -22,12 +22,12 @@ function Navbar() {
                 
             </div>
         </div>
-        <div className='md:static w-full flex justify-center md:justify-end'>
-          <div className={`flex flex-col items-center gap-5 md:flex md:flex-row py-6 md:py-0 md:w-[70%] md:justify-between ${toggle?"":"hidden"}`}>
+        <div className='md:static w-full flex justify-center md:justify-end font-medium'>
+          <div className={`flex flex-col items-center gap-5 md:flex md:flex-row py-6 md:py-0 md:w-[70%] md:justify-end md:gap-10 ${toggle?"":"hidden"}`}>
             <div><Link to="" className=' hover:text-gray-500'>Crypto Taxes</Link></div>
             <div><Link to="" className=' hover:text-gray-500'>Free Tools</Link></div>
             <div><Link to="" className=' hover:text-gray-500'>Resource Center</Link></div>
-            <div><button className='bg-gradient-to-r from-nav-button-start-color to-nav-button-end-color text-white px-[10px] py-[3px] rounded-md'>Get Started</button></div>
+            <div><button className='bg-gradient-to-r from-nav-button-start-color to-nav-button-end-color text-white px-[10px] py-[3px] rounded-md font-normal'>Get Started</button></div>
           </div>
         </div>
        

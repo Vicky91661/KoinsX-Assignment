@@ -33,7 +33,7 @@ function Crypto() {
         <div className='Team md:pb-5'>
             <Team/>
         </div>
-        <div className=' LikeCoin bg-white md:absolute md:-bottom-5 px-0'>
+        <div className=' LikeCoin static bg-white md:absolute md:-bottom-[440px] px-0 rounded-md md:rounded-none'>
             <LikeCoin/>
         </div>
       </div>

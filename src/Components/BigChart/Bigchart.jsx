@@ -3,22 +3,12 @@ import React, { useEffect, useState } from 'react'
 import Chart from './Chart'
 import { FaBitcoin } from "react-icons/fa";
 import { IoTriangle } from "react-icons/io5";
+import { useRecoilValue } from 'recoil';
+import { bitCoin } from '../../State/Atom';
 function Bigchart({}) {
 
-    const [data,setData]=useState({})
-    const [error,setError] =useState("")
-
-    // useEffect(()=>{
-    //     axios.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr,usd')
-    //     .then(function (response) {
-    //         console.log(response.data.bitcoin)
-    //         setData(response.data.bitcoin)
-    //     })
-    //     .catch(function (error) {
-    //         setError(error)
-    //         console.log(error);
-    //     });
-    // },[])
+    const data=useRecoilValue(bitCoin)
+    
   return (
     <div className='p-2 md:p-4 rounded-lg shadow-xl bg-white '>
         <div className='w-[100%] h-34 flex flex-col'>
@@ -42,7 +32,7 @@ function Bigchart({}) {
                             <IoTriangle  color="#1DB07F" fontSize="0.8em"/>
                         </div>
                         <div>
-                            2.51
+                            2.51%
                         </div>
                     </div>
                     <div className=' text-sm text-gray-500'>

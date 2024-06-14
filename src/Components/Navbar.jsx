@@ -11,7 +11,7 @@ function Navbar() {
       <div className=' md:flex md:justify-between items-center w-[92%] mx-auto  '>
         <div className='md:w-[40%]  flex  justify-between items-center'>
             <div className='flex'>
-                <img className=' w-16' src={"https://www.koinx.com/_next/static/media/Logo.5f2ad8d5.svg"} alt="Koinx" />
+                <img className=' w-16' src={"https://www.koinx.com/_next/static/media/Logo.99e6a1dc.svg"} alt="Koinx" />
                 <p className='text-[8px] md:text-[10px]'>TM</p>
             </div>
            

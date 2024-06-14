@@ -28,7 +28,7 @@ function LikeCoin() {
                 // console.log(coin.item.thumb) symbol,photo,price,percentage
                 // console.log(parseFloat(coin.item.data.price.split("$")[1]).toFixed(2))
                 return <div  key={index}><StockCard symbol={coin.item.symbol} photo={coin.item.thumb} 
-                price={parseFloat(coin.item.data.price.split("$")[1]).toFixed(2)}
+                price={coin.item.data.price.toFixed(2)}
                 percentage={coin.item.data.price_change_percentage_24h.btc.toFixed(2)}
                 map={coin.item.data.sparkline}
                 /></div>
@@ -42,7 +42,7 @@ function LikeCoin() {
                 // console.log(coin.item.thumb) symbol,photo,price,percentage
                 // console.log(parseFloat(coin.item.data.price.split("$")[1]).toFixed(2))
                 return <div  key={index}><StockCard symbol={coin.item.symbol} photo={coin.item.thumb} 
-                price={parseFloat(coin.item.data.price.split("$")[1]).toFixed(2)}
+                price={coin.item.data.price.toFixed(2)}
                 percentage={coin.item.data.price_change_percentage_24h.btc.toFixed(2)}
                 map={coin.item.data.sparkline}
                 /></div>
